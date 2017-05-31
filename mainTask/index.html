@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body>
-	<div id="poll">
+	<div>
 		<h3>How are you?</h3>
-		<form>
+		<form action="vote.php" method="post">
 			Good:
-			<input type="radio" class="vote1" name="vote" value="0">
-			<br>Bad:
-			<input type="radio" class="vote1" name="vote" value="1">
+			<input type="radio" name="vote" value="0" >
+			<br>
+			Bad:
+			<input type="radio" name="vote" value="1">
+			<br>
+			<input type="submit">
 		</form>
 	</div>
-	<div id="piechart" style="width: 900px; height: 500px;"></div>
+</body>
 </body>
 </html>
